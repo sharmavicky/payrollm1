@@ -1,0 +1,196 @@
+body {
+	font-family: calibri;
+	margin: 0px;
+}
+
+#emplist-navbar{
+	display:none;
+}
+#emplist{
+	display:none;
+}
+
+.header {
+	font-size: 30px;
+	color: #FFFFFF;
+	background-color: blue;
+	padding: 10px;
+}
+
+.menu {
+	width: 15%;
+	float: left;
+	font-family: Comic Sans MS;
+}
+
+.menu a {
+	color: black;
+	text-decoration: none;
+}
+
+.activity {
+
+	float: right;
+	background-color: #f2f2f2;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.menu-item {
+	padding: 10px 0px 10px 30px
+}
+
+.menu-item:hover {
+	background-color: lightgreen;
+}
+
+.selected {
+	background-color: lightgreen;
+}
+
+#employees {
+	boarder-collapse: collapse;
+	width: 100%;
+}
+
+#employees td, #employees th {
+	boarder: 1px solid #ddd;
+	font-size: 12px;
+	padding: 8px;
+	font-size: 12px;
+}
+
+#employees th {
+	padding: 12px;
+	text-align: left;
+	background-color: #5DC0BD;
+	color: white;
+	font-weight: 500;
+}
+#employees tr:nth-child(even){
+	background-color: lightgrey;
+}
+#employees tr:nth-child(odd){
+	background-color: white;
+}
+#employees tr:hover{
+	background-color: lightblue;
+}
+
+
+.textbox{
+	width:100%;
+	height:30px;
+	padding:.375rem,.7rem;
+	line-height:1.5;
+	color:#495070;
+	border-radius: .25rem;
+	
+}
+
+.lable{
+	font-weight:1000;
+	color:#495070;
+	
+}
+
+.btn{
+	border-radius:.25rem;
+	
+}
+
+
+
+
+
+.details-text {
+	font-family: calibri;
+	font-size: 16px;
+	color: black;
+	line-height: 1.5;
+	padding-left: 3px;
+}
+
+i {
+	color: grey;
+}
+
+.card-payroll-header {
+	background-color: rgba(0, 0, 0, .03);
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	padding-left: 5px;
+}
+
+
+
+
+
+
+
+.details-text{
+	font-family: calibri;
+	font-size:16px;
+	color:black;
+	line-height:1.5;
+	padding-left:3px;
+} 
+
+i{
+color:grey;
+}
+
+.py-row {
+	margin-right: 0px;
+}
+
+.py-emp-photo {
+	width: 100%;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.py-card {
+	border: 1px solid white;
+	background-color: #f2f2f2;
+	padding-right: 0px;
+	margin-top: 5px;
+}
+
+.py-card-body {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.py-card-header {
+	padding: 2px;
+	background-color: #f2f2f2;
+	line-height: 1.2;
+	margin-bottom: 8px"
+}
+
+.py-card-subtitle {
+	font-size: 14px;
+	color: #6666cc;
+	font-style: italic;
+}
+
+.py-card-footer{
+	margin:0px;padding-right:0px;padding-left:0px;width:100%;
+}
+
+.py-card-footer-body{
+	text-align:center; 
+	border-top: 1px solid navy;
+}
+
+
+#updateEmp{
+	display:none;
+	
+}
+#updateEmpForm{
+	display:none;
+}

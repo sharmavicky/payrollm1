@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="javaSkill" class="com.cts.payroll.bean.Skills" scope="prototype">
+		<!-- collaborators and configuration for this bean go here -->
+		<property name="id" value="2" />
+		<property name="name" value="java" />
+	</bean>
+	<bean id="java" class="com.cts.payroll.bean.Skills">
+		<constructor-arg type="int" value="6" />
+		<constructor-arg type="java.lang.String" value="java" />
+	</bean>
+	<bean id="employee" class="com.cts.payroll.bean.Employee" scope="prototype">
+		<property name="id" value="2" />
+		<property name="name" value="java" />
+		<property name="address" ref="refAddress" />
+	</bean>
+	<bean id="refAddress" class="com.cts.payroll.bean.Address" scope="prototype">
+		<property name="id" value="2" />
+	</bean>
+	<bean id="springTest" class="com.cts.payroll.app.SpringTest" scope="prototype"  autowire="byName"/>
+	<!-- - 	<property name="employeeService" ref="employeeService" />
+	</bean>  -->
+	 
+<bean id="employeeService" class="com.cts.payroll.bean.EmployeeService" scope="prototype"  autowire="byName"/>
+		<!-- - <property name="employeeDao" ref="employeeDao" />
+	</bean>--> 
+	<bean id="employeeDao" class="com.cts.payroll.dao.EmployeeDao" scope="prototype">
+		
+	</bean>
+	
+
+
+	<!-- more bean definitions go here -->
+
+</beans>
